@@ -11,6 +11,14 @@
     return;
   }
 
+  // "images/<dir>/<name>.<ext>" → "images/<dir>/thumbs/<name>.webp".
+  const thumbWebp = (src) => {
+    const dot = src.lastIndexOf('.');
+    const slash = src.lastIndexOf('/');
+    if (dot < 0 || slash < 0 || dot < slash) return src;
+    return `${src.slice(0, slash)}/thumbs/${src.slice(slash + 1, dot)}.webp`;
+  };
+
   const sections = Array.isArray(data.sections) ? data.sections : [];
 
   mounts.forEach((mount) => {
@@ -31,14 +39,21 @@
             const image = images[imageIndex];
             if (image?.src) {
               const img = document.createElement('img');
-              img.src = image.src;
+              img.src = thumbWebp(image.src);
               img.alt = image.alt || '';
               img.loading = 'lazy';
               img.decoding = 'async';
               img.fetchPriority = 'low';
               img.width = 720;
               img.height = 720;
-              img.onerror = () => img.remove();
+              img.onerror = () => {
+                if (img.dataset.fallback || img.src === image.src) {
+                  img.remove();
+                  return;
+                }
+                img.dataset.fallback = '1';
+                img.src = image.src;
+              };
               tile.appendChild(img);
             }
             return tile;

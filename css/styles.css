@@ -316,6 +316,44 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
   margin-bottom: 0.9rem;
   color: var(--olive);
 }
+.rail-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.9rem;
+}
+.rail-header .rail-heading {
+  margin-bottom: 0;
+}
+.shuffle-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  padding: 0.25rem;
+  margin: 0;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.5;
+  transition: opacity 180ms ease, transform 400ms ease;
+}
+.shuffle-btn:hover,
+.shuffle-btn:focus-visible {
+  opacity: 1;
+  outline: none;
+}
+.shuffle-btn:hover {
+  transform: rotate(180deg);
+}
+.shuffle-btn:active {
+  transform: rotate(360deg);
+}
+.shuffle-btn img {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
 .photo-rail {
   --rail-tile: clamp(140px, 18vw, 200px);
   display: grid;
@@ -342,6 +380,14 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
   overflow: hidden;
   scroll-snap-align: start;
   margin: 0;
+}
+.photo-rail .tile.feature {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.photo-rail .tile.feature figcaption {
+  font-size: 1rem;
+  padding: 1.2rem;
 }
 .photo-rail .tile img {
   width: 100%;
