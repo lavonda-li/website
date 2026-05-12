@@ -556,10 +556,9 @@ body[data-theme="white"] .work-showcase .work-title {
   padding-top: 0.25rem;
 }
 .life-copy p {
-  font-size: clamp(1rem, 1.45vw, 1.3rem);
-  line-height: 1.62;
-  font-weight: 600;
-  margin-bottom: 1.2rem;
+  font-size: 0.92rem;
+  line-height: 1.72;
+  margin-bottom: 1rem;
 }
 .life-copy p:last-child {
   margin-bottom: 0;
