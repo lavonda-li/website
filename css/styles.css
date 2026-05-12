@@ -226,7 +226,7 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
 .home-hero .photo.left {
   left: 4%;
   top: 38%;
-  width: clamp(150px, 28vw, 430px);
+  width: clamp(150px, 22vw, 300px);
   aspect-ratio: 4 / 5;
 }
 .home-hero .photo.right {
