@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lavonda Li</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-theme="light">
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html"><img src="images/ll.png" alt="Lavonda Li" /></a>
+      <nav class="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="work.html">Work</a>
+        <a href="life.html">Life</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section class="home-hero">
+        <div class="photo left">
+          <img src="images/grad.jpg" alt="Graduation" />
+        </div>
+        <h1 class="center-title title-slot">Lavonda Li</h1>
+        <div class="photo right">
+          <img src="images/portrait.jpg" alt="Portrait" style="object-position: 50% 80%;" />
+        </div>
+      </section>
+
+      <p class="tagline-block">Product / Program Manager</p>
+
+      <!--
+        ============================================================
+         HOW TO ADD A PHOTO
+         1. Drop the image file in the images/ folder (e.g.
+            images/highlights/andrew-ng.jpg)
+         2. Add an entry to photos.json under "highlights" or "moments":
+              { "image": "images/highlights/andrew-ng.jpg",
+                "caption": "Me w/ Andrew Ng" }
+         3. Reload the page. The "image" field is optional; omit it for
+            a placeholder tile.
+        ============================================================
+      -->
+
+      <section class="photo-section" aria-labelledby="life-highlights-heading">
+        <h2 id="life-highlights-heading" class="rail-heading">Life Highlights</h2>
+        <div class="photo-rail" data-section="highlights"></div>
+      </section>
+
+      <section class="photo-section" aria-labelledby="life-moments-heading">
+        <h2 id="life-moments-heading" class="rail-heading">Life Moments</h2>
+        <div class="photo-rail" data-section="moments"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="js/photos.js" defer></script>
+
+  <footer class="site-footer">
+    <div class="footer-meta">
+      <div class="container">
+        <span>Lavonda Li</span>
+        <span>Product Manager + Research Scientist</span>
+        <span>Stanford, CA</span>
+      </div>
+    </div>
+    <div class="footer-links">
+      <div class="container">
+        <a href="mailto:hello@example.com">Email</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-made">Made by</div>
+    <div class="brand-footer">
+      <span class="l-mark left">L</span>
+      <span class="dot"></span>
+      <span class="l-mark right">L</span>
+    </div>
+  </footer>
+</body>
+</html>

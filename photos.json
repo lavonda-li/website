@@ -1,0 +1,25 @@
+{
+  "_comment": "Add/edit photos here. Drop the image file into the images/ folder, then add an entry below. 'image' can be omitted for a placeholder tile.",
+  "highlights": [
+    { "image": "images/highlights/andrew-ng.jpg", "caption": "Me w/ Andrew Ng" },
+    { "caption": "Caption 02" },
+    { "caption": "Caption 03" },
+    { "caption": "Caption 04" },
+    { "caption": "Caption 05" },
+    { "caption": "Caption 06" },
+    { "caption": "Caption 07" },
+    { "caption": "Caption 08" },
+    { "caption": "Caption 09" }
+  ],
+  "moments": [
+    { "caption": "Caption 01" },
+    { "caption": "Caption 02" },
+    { "caption": "Caption 03" },
+    { "caption": "Caption 04" },
+    { "caption": "Caption 05" },
+    { "caption": "Caption 06" },
+    { "caption": "Caption 07" },
+    { "caption": "Caption 08" },
+    { "caption": "Caption 09" }
+  ]
+}
