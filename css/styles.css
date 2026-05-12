@@ -107,7 +107,7 @@ main { flex: 1 0 auto; }
   z-index: 1000;
   min-height: var(--header-height);
   padding: 1.25rem 0;
-  transition: background-color 220ms ease;
+  transition: background-color 220ms ease, color 220ms ease;
 }
 body[data-theme="light"] .site-header { background-color: var(--lavender); }
 body[data-theme="dark"] .site-header { background-color: var(--black); }
@@ -129,6 +129,7 @@ body[data-theme="white"] .site-header { background-color: var(--white); }
   height: 32px;
   width: auto;
   display: block;
+  transition: filter 220ms ease;
 }
 body[data-theme="dark"] .brand img { filter: invert(1); }
 .nav {
@@ -368,7 +369,8 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
 }
 .photo-rail .tile:hover img,
 .home-hero .photo:hover img,
-.work-tile:hover img {
+.work-tile:hover img,
+.life-media:hover img {
   transform: scale(1.025);
   filter: saturate(1.04) contrast(1.02);
 }
@@ -475,6 +477,47 @@ body[data-theme="white"] .work-showcase .work-title {
   border-bottom: 1px solid currentColor;
   padding-bottom: 1px;
 }
+
+/* ---------- Home: life story ---------- */
+.life-showcase {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: clamp(5rem, 9vw, 8rem) max(var(--gutter), calc((100vw - var(--max)) / 2 + var(--gutter)));
+  background: var(--black);
+  color: var(--white);
+  scroll-margin-top: 0;
+}
+.life-entry {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(3rem, 8vw, 8rem);
+  align-items: start;
+}
+.life-media {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background: var(--placeholder-dark);
+}
+.life-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 42% 50%;
+}
+.life-copy {
+  max-width: 52ch;
+  padding-top: 0.25rem;
+}
+.life-copy p {
+  font-size: clamp(1rem, 1.45vw, 1.3rem);
+  line-height: 1.62;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+.life-copy p:last-child {
+  margin-bottom: 0;
+}
 @media (max-width: 720px) {
   .work-entry {
     grid-template-columns: 1fr;
@@ -493,6 +536,14 @@ body[data-theme="white"] .work-showcase .work-title {
   }
   .work-copy {
     max-width: none;
+  }
+  .life-entry {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .life-copy {
+    max-width: none;
+    padding-top: 0;
   }
 }
 
