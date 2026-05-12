@@ -350,8 +350,8 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
   transform: rotate(360deg);
 }
 .shuffle-btn img {
-  width: 18px;
-  height: 18px;
+  width: 36px;
+  height: 36px;
   display: block;
 }
 .photo-rail {
