@@ -18,7 +18,7 @@
 
 html {
   height: 100%;
-  scroll-padding-top: calc(var(--header-height) + 1rem);
+  scroll-padding-top: var(--header-height);
 }
 
 body { height: 100%; }
@@ -258,6 +258,7 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
   background: var(--white);
   color: var(--black);
   margin: clamp(6rem, 10vw, 9rem) 0 0;
+  scroll-margin-top: 0;
 }
 body[data-theme="light"] .work-showcase {
   width: 100vw;

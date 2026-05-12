@@ -25,4 +25,17 @@
   updateHeaderBackground();
   window.addEventListener('scroll', updateHeaderBackground, { passive: true });
   window.addEventListener('resize', updateHeaderBackground);
+
+  document.querySelectorAll('a[href="#work"]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      const targetTop = workSection.getBoundingClientRect().top + window.scrollY;
+
+      window.history.pushState(null, '', '#work');
+      window.scrollTo({
+        top: targetTop - header.offsetHeight,
+        behavior: 'smooth',
+      });
+    });
+  });
 })();
