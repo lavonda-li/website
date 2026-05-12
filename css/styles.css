@@ -155,6 +155,55 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
   font-weight: 500;
   line-height: 1.7;
 }
+
+/* ---------- Home: about block ---------- */
+.about {
+  max-width: 620px;
+  margin: 5rem auto 4.5rem;
+  padding: 0 1rem;
+  text-align: center;
+}
+.about-eyebrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  font-size: 0.7rem;
+  letter-spacing: var(--tracked);
+  text-transform: uppercase;
+  font-weight: 600;
+  color: var(--olive);
+  margin-bottom: 2rem;
+}
+.about-eyebrow::before,
+.about-eyebrow::after {
+  content: "";
+  width: 32px;
+  height: 1px;
+  background: var(--olive);
+  opacity: 0.45;
+}
+.about-lede {
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
+  line-height: 1.55;
+  font-weight: 500;
+  color: var(--olive);
+  margin: 0 auto 1.75rem;
+  max-width: 38ch;
+}
+.about-body {
+  font-size: 0.95rem;
+  line-height: 1.8;
+  margin: 0 auto 1.15rem;
+  max-width: 54ch;
+  color: rgba(0, 0, 0, 0.78);
+}
+.about-body:last-child { margin-bottom: 0; }
+.about-place {
+  font-weight: 600;
+  color: var(--olive);
+  white-space: nowrap;
+}
 .education {
   text-align: center;
   margin-bottom: 4rem;
