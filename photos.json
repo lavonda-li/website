@@ -1,7 +1,8 @@
 {
   "_comment": "Add/edit photos here. Drop the image file into the images/ folder, then add an entry below. 'image' can be omitted for a placeholder tile.",
   "highlights": [
-    { "image": "images/highlights/andrew-ng.jpg", "caption": "Me w/ Andrew Ng" },
+    { "image": "images/highlights/andrew.jpeg", "caption": "Andrew Ng" },
+    { "image": "images/highlights/ase.jpeg", "caption": "Andrew Ng" },
     { "caption": "Caption 02" },
     { "caption": "Caption 03" },
     { "caption": "Caption 04" },
