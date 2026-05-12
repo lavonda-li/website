@@ -452,6 +452,15 @@ body[data-theme="light"] .work-showcase .work-title,
 body[data-theme="white"] .work-showcase .work-title {
   color: var(--black);
 }
+.life-showcase .life-title {
+  color: var(--white);
+  margin: 0 0 clamp(4rem, 12vw, 10rem);
+}
+body[data-theme="light"] .life-showcase .life-title,
+body[data-theme="dark"] .life-showcase .life-title,
+body[data-theme="white"] .life-showcase .life-title {
+  color: var(--white);
+}
 .work-list {
   display: block;
 }
