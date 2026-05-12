@@ -181,7 +181,7 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
   --rail-tile: clamp(140px, 18vw, 200px);
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: repeat(3, var(--rail-tile));
+  grid-template-rows: repeat(2, var(--rail-tile));
   grid-auto-columns: var(--rail-tile);
   gap: 0.4rem;
   overflow-x: auto;
