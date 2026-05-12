@@ -60,6 +60,44 @@ main img {
 
 main { flex: 1 0 auto; }
 
+/* ---------- Golden cursor trail ---------- */
+@media (pointer: fine) {
+  .star-sprinkle {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 2147483647;
+  }
+
+  .star-sprinkle {
+    width: var(--sprinkle-size, 4px);
+    height: var(--sprinkle-size, 4px);
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff8cf 0%, #f7c548 58%, rgba(247, 197, 72, 0) 72%);
+    box-shadow: 0 0 8px rgba(255, 207, 74, 0.65);
+    transform: translate3d(var(--sprinkle-x), var(--sprinkle-y), 0) scale(1);
+    animation: star-sprinkle-fade 520ms ease-out forwards;
+  }
+
+  @keyframes star-sprinkle-fade {
+    to {
+      opacity: 0;
+      transform: translate3d(
+        calc(var(--sprinkle-x) - var(--sprinkle-drift-x)),
+        calc(var(--sprinkle-y) - var(--sprinkle-drift-y)),
+        0
+      ) scale(0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce), (pointer: coarse) {
+  .star-sprinkle {
+    display: none;
+  }
+}
+
 /* ---------- Header ---------- */
 .site-header {
   position: fixed;
