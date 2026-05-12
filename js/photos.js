@@ -23,6 +23,10 @@
           img.src = item.image;
           img.alt = item.caption || '';
           img.loading = 'lazy';
+          img.decoding = 'async';
+          img.fetchPriority = 'low';
+          img.width = 400;
+          img.height = 400;
           img.onerror = () => img.remove();
           fig.appendChild(img);
         }

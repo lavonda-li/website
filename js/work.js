@@ -34,6 +34,10 @@
               img.src = image.src;
               img.alt = image.alt || '';
               img.loading = 'lazy';
+              img.decoding = 'async';
+              img.fetchPriority = 'low';
+              img.width = 720;
+              img.height = 720;
               img.onerror = () => img.remove();
               tile.appendChild(img);
             }

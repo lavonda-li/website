@@ -225,7 +225,7 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
 .home-hero .photo.left {
   left: 4%;
   top: 38%;
-  width: 16%;
+  width: clamp(150px, 28vw, 430px);
   aspect-ratio: 4 / 5;
 }
 .home-hero .photo.right {
@@ -236,7 +236,7 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
 }
 @media (max-width: 720px) {
   .home-hero { min-height: 360px; }
-  .home-hero .photo.left  { width: 28%; top: 50%; }
+  .home-hero .photo.left  { top: 50%; }
   .home-hero .photo.right { width: 50%; top: 0; }
 }
 
@@ -304,6 +304,8 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
 /* ---------- Home: horizontal photo rails ---------- */
 .photo-section {
   margin: 2.5rem 0 3rem;
+  content-visibility: auto;
+  contain-intrinsic-size: 420px;
 }
 .rail-heading {
   font-size: 0.82rem;
@@ -411,6 +413,8 @@ body[data-theme="white"] .work-showcase .work-title {
   gap: clamp(3rem, 7vw, 6.5rem);
   align-items: stretch;
   margin-bottom: clamp(6rem, 12vw, 10rem);
+  content-visibility: auto;
+  contain-intrinsic-size: 920px;
 }
 .work-entry:last-child {
   margin-bottom: 0;
