@@ -21,13 +21,9 @@ work-intuitive-02.jpg       Team photo (top-right)
 work-intuitive-03.jpg       da Vinci cockpit (bottom-left)
 work-intuitive-04.jpg       Robot booth (bottom-right)
 
-Life page (life.html)
----------------------
-life-portrait.jpg           Single portrait, 4:5 crop
-
 Notes
 -----
 - Square (1:1) crops work best for the Home collage and Work 2x2.
-- Portrait (4:5) crops work for life-portrait and home-hero-grad.
+- Portrait (4:5) crops work for home-hero-grad.
 - Landscape (~4:3) for home-hero-portrait.
 - JPG or WebP both fine; keep each under ~400KB if possible.

@@ -15,9 +15,12 @@
       <a class="brand" href="index.html"><img src="images/ll.png" alt="Lavonda Li" /></a>
       <nav class="nav">
         <a href="index.html" class="active">Home</a>
-        <a href="work.html">Work</a>
-        <a href="life.html">Life</a>
+        <a href="#work">Work</a>
       </nav>
+      <div class="header-links" aria-label="Contact links">
+        <a href="https://www.linkedin.com/in/lavonda-li/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:lavonda.li0531@gmail.com">Email</a>
+      </div>
     </div>
   </header>
 
@@ -58,45 +61,22 @@
         </p>
       </section>
 
-      <!--
-        ============================================================
-         HOW TO ADD A PHOTO
-         1. Drop the image file in the images/ folder (e.g.
-            images/highlights/andrew-ng.jpg)
-         2. Add an entry to photos.json under "highlights" or "moments":
-              { "image": "images/highlights/andrew-ng.jpg",
-                "caption": "Me w/ Andrew Ng" }
-         3. Reload the page. The "image" field is optional; omit it for
-            a placeholder tile.
-        ============================================================
-      -->
-
-      <section class="photo-section" aria-labelledby="life-highlights-heading">
-        <h2 id="life-highlights-heading" class="rail-heading">Life Highlights</h2>
-        <div class="photo-rail" data-section="highlights"></div>
-      </section>
-
-      <section class="photo-section" aria-labelledby="life-moments-heading">
-        <h2 id="life-moments-heading" class="rail-heading">Life Moments</h2>
-        <div class="photo-rail" data-section="moments"></div>
+      <section id="work" class="work-showcase" aria-labelledby="work-heading">
+        <h2 id="work-heading" class="center-title work-title">Work</h2>
+        <div class="work-list" data-work-sections></div>
       </section>
     </div>
   </main>
 
-  <script src="js/photos.js" defer></script>
+  <script src="js/work.js" defer></script>
+  <script src="js/header.js" defer></script>
 
   <footer class="site-footer">
     <div class="footer-meta">
       <div class="container">
         <span>Lavonda Li</span>
-        <span>Product Manager + Research Scientist</span>
+        <span>PM + Engineer + Founder</span>
         <span>Stanford, CA</span>
-      </div>
-    </div>
-    <div class="footer-links">
-      <div class="container">
-        <a href="mailto:hello@example.com">Email</a>
-        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
     <div class="footer-made">Made by</div>

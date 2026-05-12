@@ -1,0 +1,74 @@
+{
+  "_comment": "Edit work sections here. labelHtml and paragraphs accept simple inline HTML links.",
+  "sections": [
+    {
+      "labelHtml": "Product Manager @ Intuitive Surgical (<a href='https://www.intuitive.com/en-us/products-and-services/da-vinci/5' target='_blank' rel='noopener'>da Vinci 5</a>)",
+      "images": [
+        { "src": "images/intuitive_front_desk.jpeg", "alt": "Lavonda at Intuitive Surgical sign" },
+        { "src": "images/intuitive_group.jpg", "alt": "Intuitive Surgical team" },
+        { "src": "images/intuitive_surgery.jpeg", "alt": "da Vinci surgical console" },
+        { "src": "images/intuitive_chicago.jpg", "alt": "da Vinci 5 event" }
+      ],
+      "paragraphs": [
+        "Anyone who has played with da Vinci would be amazed! Such an innovative product, and incredibly high-stakes use (i.e. surgery!).",
+        "I led the upstream product development of haptics technology, building innovative <a href='https://www.intuitive.com/en-us/digital-solutions/my-intuitive/my-intuitive' target='_blank' rel='noopener'>digital solutions</a> from the sheer amount of human data we had. On the downstream side, I drove go-to-market launches in international markets. I got to collaborate a lot with surgeons and robotics engineers, and manage high-priority projects across the board. It was exhilarating to see the whole process of translating a medical need and human data into a real, high-precision technology (one that has to pass the FDA, of course)."
+      ]
+    },
+    {
+      "labelHtml": "Co-founder @ Startups",
+      "images": [
+        { "src": "images/nasdaq.jpg", "alt": "Startup event" },
+        { "src": "images/photographer.jpg", "alt": "Creative production work" },
+        { "src": "images/la.jpg", "alt": "Los Angeles" },
+        { "src": "images/lucky.jpg", "alt": "Music and creative work" }
+      ],
+      "paragraphs": [
+        "When I experience a problem myself, I try really hard to find solutions, and I want to scale that up for broader impact.",
+        "It took a lot of effort back when I was doing GCSE/A-levels to apply to top unis, and after successfully navigating that, I built an edtech tutoring startup, <a href='https://www.meetcam.co.uk/' target='_blank' rel='noopener'>MeetCam</a>, where I recruited and managed hundreds of contracted experts and built the whole tutoring platform and course catalog from scratch. As my first startup and first-time CEO, it taught me so many business and life lessons (good and bad)!",
+        "As a musician, when our band struggled to compose songs, we (as engineers) built an <a href='https://neuromuse.netlify.app/' target='_blank' rel='noopener'>AI-powered music creation startup</a>, where we labelled a sea of songs, went deep into machine learning, and also went through all the 'fun' fundraising things (and I learnt a lot more about VCs as a bonus).",
+        "Overall, I learnt how to have an ambitious vision (be a visionary, look at the stars!) while also keeping my eyes down in the weeds."
+      ]
+    },
+    {
+      "labelHtml": "Research @ Stanford University",
+      "images": [
+        { "src": "images/stanford_card.jpg", "alt": "Stanford ID card" },
+        { "src": "images/stanford_levin.jpg", "alt": "Stanford campus" },
+        { "src": "images/highlights/demo_day.jpeg", "alt": "Stanford demo day" },
+        { "src": "images/oussama.jpg", "alt": "Stanford research community" }
+      ],
+      "paragraphs": [
+        "Phewwwww, it was a huge life decision for me to fly across the globe all the way from London to the States (a lot of sacrifices I had to make), but I'm so GLAD I did.",
+        "I joined the <a href='https://ai.stanford.edu/' target='_blank' rel='noopener'>Stanford Artificial Intelligence Laboratory (SAIL)</a>, in collaboration with the <a href='https://hai.stanford.edu/' target='_blank' rel='noopener'>Stanford Institute for Human-Centered Artificial Intelligence (HAI)</a>, to work on developing a frontier vision language model (VLM) for radiology. Hands-on building gave me the chance to try out so many of the latest AI tools and coding agents. We eventually set a new state of the art (SOTA), released a benchmark, and got it deployed at Mayo Clinic!",
+        "I also took many courses at the GSB (Graduate School of Business), a very economical way to get MBA training without paying a ton, lol. I ended up earning a mini-MBA certificate, and most importantly, learning how to communicate strategically and the power of storytelling."
+      ]
+    },
+    {
+      "labelHtml": "Program Manager @ Sanofi, Novartis",
+      "images": [
+        { "src": "images/south_sf.jpg", "alt": "Biotech work setting" },
+        { "src": "images/toronto.jpg", "alt": "Conference travel" },
+        { "src": "images/liberty.jpg", "alt": "International program work" },
+        { "src": "images/london.jpg", "alt": "Global healthcare programs" }
+      ],
+      "paragraphs": [
+        "I wanted to help make medical information and access more equitable (especially during the pandemic), so I joined the biotech world to lead strategic campaigns. I organized large-scale international conferences, regional educational bootcamps, and hospital-level seminars, working cross-functionally with academic and clinical doctors, drug researchers, marketing and sales teams, and picking up a lot about legal and compliance along the way.",
+        "Most importantly, I met so many interesting and fun people (many of whom have become lifelong friends!). The most valuable transferable skill I took away, one that's served me ever since, is relationship building and being able to bridge the technical and non-technical. That really paved my way as a PM going forward."
+      ]
+    },
+    {
+      "labelHtml": "Research @ University of Cambridge",
+      "images": [
+        { "src": "images/uk.jpg", "alt": "United Kingdom" },
+        { "src": "images/highlights/cambridge_grad.jpg", "alt": "Cambridge graduation" },
+        { "src": "images/moments/cambridge_library.jpg", "alt": "Cambridge library" },
+        { "src": "images/moments/cambridge_fountain.jpg", "alt": "Cambridge fountain" }
+      ],
+      "paragraphs": [
+        "I worked at the <a href='https://www.fruk-lab.com/' target='_blank' rel='noopener'>Cambridge Bionano Engineering Group</a> under Professor Ljiljana Fruk, designing drug carriers for pancreatic cancer (the most lethal common cancer) and biosensors for early cancer screening. This work is deeply meaningful to me as my grandparent passed away from a lethal cancer, and I wanted to contribute and give back. It was a busy stretch of getting my hands dirty in the lab and deep in the weeds of cancer research.",
+        "After that, I joined the <a href='https://www.dimichelelab.org/' target='_blank' rel='noopener'>DNA Nanotechnology and Synthetic Cells Lab</a> under Professor Lorenzo Di Michele, because synthetic biology was such a hot topic and I was fascinated by the potential to engineer biomimetic materials and systems from the bottom up, like building with Lego blocks! How fun is that? Who doesn't like Lego?",
+        "Check out my <a href='https://scholar.google.com/citations?user=mcDu1vkAAAAJ&amp;hl=en&amp;oi=ao' target='_blank' rel='noopener'>Google Scholar</a>."
+      ]
+    }
+  ]
+}
