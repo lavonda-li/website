@@ -514,8 +514,7 @@ body[data-theme="white"] .life-showcase .life-title {
   color: var(--black);
 }
 .work-label {
-  margin-top: auto;
-  padding-top: 3rem;
+  margin-bottom: 1.4rem;
   font-size: 0.7rem;
   letter-spacing: var(--tracked);
   text-transform: uppercase;
@@ -586,7 +585,7 @@ body[data-theme="white"] .life-showcase .life-title {
     min-height: 0;
   }
   .work-label {
-    padding-top: 1.75rem;
+    margin-bottom: 1.1rem;
   }
   .work-copy {
     max-width: none;

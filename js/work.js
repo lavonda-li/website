@@ -63,19 +63,19 @@
 
         const copy = document.createElement('div');
         copy.className = 'work-copy';
+        const label = document.createElement('p');
+        label.className = 'work-label';
+        label.innerHTML = item.labelHtml || '';
+
         const paragraphs = Array.isArray(item.paragraphs) ? item.paragraphs : [];
         copy.replaceChildren(
+          label,
           ...paragraphs.map((text) => {
             const p = document.createElement('p');
             p.innerHTML = text;
             return p;
           })
         );
-
-        const label = document.createElement('p');
-        label.className = 'work-label';
-        label.innerHTML = item.labelHtml || '';
-        copy.appendChild(label);
 
         section.append(media, copy);
         return section;
