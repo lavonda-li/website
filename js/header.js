@@ -4,6 +4,11 @@
   const lifeSection = document.querySelector('#life');
   const brandImage = header?.querySelector('.brand img');
   const isHomePage = document.body.dataset.theme === 'light';
+  const navLinks = {
+    home: header?.querySelector('.nav a[href="#top"]'),
+    work: header?.querySelector('.nav a[href="#work"]'),
+    life: header?.querySelector('.nav a[href="#life"]'),
+  };
 
   if (!header || !workSection || !isHomePage) return;
 
@@ -25,6 +30,18 @@
     return clamp((window.scrollY - fadeStart) / Math.max(1, fadeEnd - fadeStart));
   };
 
+  const setActiveNav = () => {
+    const activeKey = lifeSection && progressToward(lifeSection) > 0.98
+      ? 'life'
+      : progressToward(workSection) > 0.98
+        ? 'work'
+        : 'home';
+
+    Object.entries(navLinks).forEach(([key, link]) => {
+      link?.classList.toggle('active', key === activeKey);
+    });
+  };
+
   const updateHeaderBackground = () => {
     const workProgress = progressToward(workSection);
     const lifeProgress = progressToward(lifeSection);
@@ -38,6 +55,8 @@
     if (brandImage) {
       brandImage.style.filter = `invert(${lifeProgress})`;
     }
+
+    setActiveNav();
   };
 
   updateHeaderBackground();
