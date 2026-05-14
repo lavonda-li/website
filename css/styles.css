@@ -424,8 +424,35 @@ body[data-theme="dark"]  .home-hero .title-slot { color: #fff; }
 .photo-rail .tile:focus-within figcaption {
   opacity: 1;
 }
-@media (hover: none) {
-  .photo-rail .tile figcaption { opacity: 1; }
+@media (hover: none), (pointer: coarse) {
+  .photo-rail .tile figcaption {
+    opacity: 0;
+  }
+  .photo-rail .tile.has-caption::after {
+    content: "i";
+    position: absolute;
+    right: 0.55rem;
+    bottom: 0.55rem;
+    width: 1.35rem;
+    height: 1.35rem;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.48);
+    color: var(--white);
+    display: grid;
+    place-items: center;
+    font-size: 0.7rem;
+    font-weight: 600;
+    font-style: italic;
+    line-height: 1;
+    pointer-events: none;
+    transition: opacity 180ms ease;
+  }
+  .photo-rail .tile.is-caption-visible figcaption {
+    opacity: 1;
+  }
+  .photo-rail .tile.is-caption-visible::after {
+    opacity: 0;
+  }
 }
 /* ---------- Shared work showcase ---------- */
 .work-showcase {
