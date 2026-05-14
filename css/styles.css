@@ -576,15 +576,25 @@ body[data-theme="white"] .life-showcase .life-title {
   align-items: start;
 }
 .life-media {
-  aspect-ratio: 1 / 1;
-  overflow: hidden;
-  background: var(--placeholder-dark);
+  margin: 0;
 }
 .life-media img {
   width: 100%;
-  height: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
   object-fit: cover;
   object-position: 42% 50%;
+  overflow: hidden;
+  background: var(--placeholder-dark);
+}
+.life-media figcaption {
+  margin-top: 0.85rem;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  line-height: 1.45;
+  text-transform: uppercase;
 }
 .life-copy {
   max-width: 52ch;
